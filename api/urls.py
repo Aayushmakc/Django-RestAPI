@@ -9,5 +9,5 @@ router=routers.DefaultRouter()
 router.register(r'companies',CompanyViewSet)
 
 urlpatterns = [
-    path('',include(router.urls))
+    path('api/v1/',include(router.urls))
 ]
